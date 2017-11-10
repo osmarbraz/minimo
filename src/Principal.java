@@ -27,7 +27,7 @@ public class Principal {
     public static int minimo(int A[], int n) {
         //Considere o primeiro como menor
         int min = A[0];
-        for (int j = 0; j <= n; j++) {
+        for (int j = 0; j < n; j++) {
             if (min > A[j]) {
                 min = A[j];
             }
@@ -40,7 +40,7 @@ public class Principal {
         int A[] = {50, 70, 60, 90, 10, 30, 20, 40};
 
         //Quantidade de elementos
-        int n = A.length-1;
+        int n = A.length;
 
         int menor = minimo(A, n);
         System.out.println("Menor:" + menor);
