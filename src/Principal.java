@@ -27,16 +27,17 @@
 public class Principal {
 
     /**
-     * Recebe um vetor A[1... n] e devolve o mínimo do vetor.
+     * Recebe um vetor A[1... n] e devolve o menor valor do vetor.
      * Número de comparações: n-1 = Theta(n)
      * 
      * @param A Vetor com os valores
-     * @param n Quantidade de elementos do vetor
-     * @return Um valor inteiro com o menor elemento do vetor
+     * @param n Quantidade de valores do vetor
+     * @return Um valor inteiro com o menor valor do vetor
      */
     public static int minimo(int A[], int n) {
         //Considere o primeiro como menor
         int min = A[1-1];
+        //Compara do segundo elemento até o fim
         for (int j = 2; j <= n; j++) {
             if (min > A[j-1]) {
                 min = A[j-1];
